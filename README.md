@@ -2,4 +2,4 @@
 
 
 ## Due Date
-February 7 at 11:59pm
+Tuesday, February 7th at 11:59 pm
