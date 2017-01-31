@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="XcodeTour" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Tour of Xcode iOS Decal Lab 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQu-1U-7Bu">
+                                <rect key="frame" x="16" y="254" width="343" height="159"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.33333333329999998" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SQu-1U-7Bu" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="EvE-Mh-fcM"/>
+                            <constraint firstItem="SQu-1U-7Bu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UZc-kf-EUs"/>
+                            <constraint firstItem="SQu-1U-7Bu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="234" id="j4f-A1-Tx3"/>
+                            <constraint firstItem="SQu-1U-7Bu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yy4-9I-Qca"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="Ycf-Lz-ObI" kind="showDetail" identifier="toNice" id="1q4-5O-7dP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="134.48275862068968"/>
+        </scene>
+        <!--Nice Work View Controller-->
+        <scene sceneID="dfg-7C-HQc">
+            <objects>
+                <viewController id="Ycf-Lz-ObI" customClass="NiceWorkViewController" customModule="XcodeTour" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J5l-3V-1eB"/>
+                        <viewControllerLayoutGuide type="bottom" id="cdB-JS-AUl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oPs-4a-6Rc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ki-Lh-DBk">
+                                <rect key="frame" x="41" y="281" width="293" height="105"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Ki-Lh-DBk" firstAttribute="centerY" secondItem="oPs-4a-6Rc" secondAttribute="centerY" id="9Bf-Yy-ea6"/>
+                            <constraint firstItem="3Ki-Lh-DBk" firstAttribute="leading" secondItem="oPs-4a-6Rc" secondAttribute="leadingMargin" constant="25" id="QdN-uf-7pm"/>
+                            <constraint firstItem="3Ki-Lh-DBk" firstAttribute="top" secondItem="J5l-3V-1eB" secondAttribute="bottom" constant="261" id="SuP-3g-rX3"/>
+                            <constraint firstItem="3Ki-Lh-DBk" firstAttribute="centerX" secondItem="oPs-4a-6Rc" secondAttribute="centerX" id="fTG-dP-hLB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textLabel" destination="3Ki-Lh-DBk" id="nAO-bD-Oyj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R3u-0C-f0V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1012" y="694.90254872563719"/>
+        </scene>
+    </scenes>
+</document>
