@@ -22,6 +22,9 @@ class OptionalsViewController: UIViewController {
         //Implement proper usage of optionals so to prevent app from crashing
         textOutput.text = self.returnStringAtRandom()!
         self.successCount += 1
+        if (self.successCount == 3) {
+            textOutput.text = "Good job! You've completed this portion. Move on to the next"
+        }
     }
     func returnStringAtRandom() -> String? {
         let randomNumber  = GKRandomSource.sharedRandom().nextInt(upperBound: 2)

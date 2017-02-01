@@ -14,6 +14,8 @@
 		4183F4CD1E4007D300612972 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4183F4CB1E4007D300612972 /* LaunchScreen.storyboard */; };
 		4183F4D51E40120C00612972 /* NiceWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183F4D41E40120C00612972 /* NiceWorkViewController.swift */; };
 		4183F4D71E401BBC00612972 /* OptionalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183F4D61E401BBC00612972 /* OptionalsViewController.swift */; };
+		4183F55D1E41B24D00612972 /* FundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183F55C1E41B24D00612972 /* FundsViewController.swift */; };
+		4183F5611E41B5AD00612972 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4183F5601E41B5AD00612972 /* constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		4183F4CE1E4007D300612972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4183F4D41E40120C00612972 /* NiceWorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiceWorkViewController.swift; sourceTree = "<group>"; };
 		4183F4D61E401BBC00612972 /* OptionalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalsViewController.swift; sourceTree = "<group>"; };
+		4183F55C1E41B24D00612972 /* FundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FundsViewController.swift; sourceTree = "<group>"; };
+		4183F5601E41B5AD00612972 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +65,31 @@
 				4183F4C21E4007D300612972 /* AppDelegate.swift */,
 				4183F4C41E4007D300612972 /* ViewController.swift */,
 				4183F4C61E4007D300612972 /* Main.storyboard */,
+				4183F55C1E41B24D00612972 /* FundsViewController.swift */,
 				4183F4D61E401BBC00612972 /* OptionalsViewController.swift */,
 				4183F4D41E40120C00612972 /* NiceWorkViewController.swift */,
 				4183F4C91E4007D300612972 /* Assets.xcassets */,
 				4183F4CB1E4007D300612972 /* LaunchScreen.storyboard */,
 				4183F4CE1E4007D300612972 /* Info.plist */,
+				4183F55E1E41B59900612972 /* Utils */,
 			);
 			path = XcodeTour;
+			sourceTree = "<group>";
+		};
+		4183F55E1E41B59900612972 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4183F55F1E41B5A200612972 /* Constants */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		4183F55F1E41B5A200612972 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4183F5601E41B5AD00612972 /* constants.swift */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,8 +166,10 @@
 			files = (
 				4183F4D71E401BBC00612972 /* OptionalsViewController.swift in Sources */,
 				4183F4C51E4007D300612972 /* ViewController.swift in Sources */,
+				4183F55D1E41B24D00612972 /* FundsViewController.swift in Sources */,
 				4183F4D51E40120C00612972 /* NiceWorkViewController.swift in Sources */,
 				4183F4C31E4007D300612972 /* AppDelegate.swift in Sources */,
+				4183F5611E41B5AD00612972 /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +331,7 @@
 				4183F4D31E4007D300612972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
