@@ -5,7 +5,10 @@
 Tuesday, February 7th at 11:59 pm
 
 ## General Overview ##
+Welcome to your first iOS DeCal Lab!
+
 There are three problems you'll be solving in this lab.
+
 1. Defining Variables
 2. Working with Optionals
 3. Using the Debugger
@@ -16,10 +19,9 @@ For example, after problem 1, there will be a view marked "2" at the top right. 
 
 ![alt text](/README-images/lab1-1.png)
 
-## Getting Started ## 
-Welcome to your first iOS DeCal Lab! 
+## Getting Started 
 
-To begin this lab, either download this repository as a zip, or clone the repository onto your own computer. Though it is not required this semester, we encourage you to [fork the repository](https://help.github.com/articles/fork-a-repo/) so that you can have your own copy that you can push commits to (especially recommended if you're not very familiar with git and want more experience!). Ask a TA if you experience any issues downloading the lab spec.
+To begin this lab, either download this repository as a zip file, or clone the repository onto your own computer. Though it is not required this semester, we encourage you to [fork the repository](https://help.github.com/articles/fork-a-repo/) so that you can have your own copy that you can push commits to (especially recommended if you're not very familiar with git and want more experience!). Ask a TA if you experience any issues downloading the lab spec.
 
 Once you've donwloaded the files onto your computer, open up the file **XcodeTour.xcodeproj**. If you've downloaded Xcode already, this will open up your project.
 
@@ -37,3 +39,8 @@ Run the app and read what's on the screen. When you press proceed, you'll see a 
  
 ## Problem 3: Using the Debugger ##
 In this problem, you have one goal and one goal only: Recover the public funds that Chancellor Dirks ruthlessly stole. First run the app and see what happens (after transfering the entry point). Then follow the instructions in the code to figure out the current value of our school's funds (`amountLeft`) using the debugging skills taught in lecture and find the right constant using the search skills also taught in lecture. Add these together to get the appropriate value. If there are enough funds, you will have passed the lab!
+
+## Grading ##
+You have the option to either be checked off by a TA or instructor during lab to receive your grade immediately **(recommended)**, or submit your files to [Gradescope](https://gradescope.com/courses/5482/assignments/17996/) to be graded later.
+
+If you are submitting via Gradescope, you will need to submit a zip folder of all of your project files (compress and submit the folder you cloned from GitHub).
