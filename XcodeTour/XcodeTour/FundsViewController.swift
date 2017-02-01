@@ -11,6 +11,8 @@ import UIKit
 class FundsViewController: UIViewController {
 
     @IBOutlet weak var textView: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.discoverFunds()
@@ -45,9 +47,11 @@ class FundsViewController: UIViewController {
     func success() {
         textView.text = "Congrats, you've recovered the public funds and finished this lab!"
         textView.textColor = UIColor.green
+        imageView.image = UIImage(named: "nice")
     }
     func fail() {
         textView.text = "Oops, you've recovered the wrong amount, remember to carefully pick the value"
+        imageView.image = UIImage(named: "tryagain")
     }
     func print(_ items: Any?) {
         //You are not allowed to use print to debug!
