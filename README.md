@@ -25,7 +25,7 @@ To begin this lab, either download this repository as a zip file, or clone the r
 
 Once you've donwloaded the files onto your computer, open up the file **XcodeTour.xcodeproj**. If you've downloaded Xcode already, this will open up your project.
 
-Before starting, it may be helpful to open the file **Main.storyboard** to see the layout of the project. Each of the View Controllers (frames) in your storyboard corresponds to a ViewController file in the Project Navigator.
+Before starting, it may be helpful to open the file **Main.storyboard** to see the layout of this lab before starting.
 
 ## Problem 1: Defining Variables ##
 If you open up **DefineVariableViewController.swift**, you'll notice that there are two "YOUR CODE HERE" sections. The goal of this problem is have you define a variable that can be used to transfer data between view controllers. 
@@ -39,6 +39,8 @@ Run the app and read what's on the screen. When you press proceed, you'll see a 
  
 ## Problem 3: Using the Debugger ##
 In this problem, you have one goal and one goal only: Recover the public funds that Chancellor Dirks ruthlessly stole. First run the app and see what happens (after transfering the entry point). Then follow the instructions in the code to figure out the current value of our school's funds (`amountLeft`) using the debugging skills taught in lecture and find the right constant using the search skills also taught in lecture. Add these together to get the appropriate value. If there are enough funds, you will have passed the lab!
+
+* Note - there's a network request in this view controller, so give the view some time to load.
 
 ## Grading ##
 You have the option to either be checked off by a TA or instructor during lab to receive your grade immediately **(recommended)**, or submit your files to [Gradescope](https://gradescope.com/courses/5482/assignments/17996/) to be graded later.
