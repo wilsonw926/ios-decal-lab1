@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var textToDisplay: [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 //        print("hello world")
@@ -38,19 +37,17 @@ class ViewController: UIViewController {
         let formattedTextArray = [formattedText]
         
         //YOUR CODE HERE
-        self.textToDisplay = formattedTextArray as! [String]
-        
-        //END YOUR CODE
+        //You have to somehow find a way to transfer the values from formattedTextArray to the textToDisplay
+
         self.matchTheArrayHere()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destinationVC = segue.destination as? NiceWorkViewController {
+            
             //YOUR CODE HERE
             //Get textToDisplay to equal formattedTextArray
-            destinationVC.textToDisplay = self.textToDisplay
-            
-            //END YOUR CODE
+            destinationVC.textToDisplay = []
         }
     }
     func print(_ items: Any?) {

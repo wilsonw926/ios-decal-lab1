@@ -22,27 +22,29 @@ class FundsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     func discoverFunds() {
-        var amountLeft: String
         let url = NSURL(string: "https://akbapu14.github.io/resume.txt")
         let task = URLSession.shared.dataTask(with: url! as URL) {(data, response, error) in
             
-            amountLeft = String(data: data!, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))!
+            let amountLeft = String(data: data!, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))!
+            
+            //YOUR CODE HERE
+            //Search for and find a suitable constant. Remember, use "po" to type in swift code into the debugger.
+            //YOU MAY NOT USE INTEGER VALUES HERE, YOU MUST USE A PREDEFINED CONSTANT
+            //amountLeft += 0
+            
+            if Int(amountLeft) == 1000000 {
+                self.success()
+            } else {
+                self.fail()
+            }
         }
         task.resume()
         
-        //YOUR CODE HERE
-        //Search for and find a suitable constant. Remember, use "po" to type in swift code into the debugger.
-        //YOU MAY NOT USE INTEGER VALUES HERE, YOU MUST USE A PREDEFINED CONSTANT
-        //amountLeft += 0
-        
-        if Int(amountLeft) == 1000000 {
-            self.success()
-        } else {
-            self.fail()
-        }
+
     }
     func success() {
         textView.text = "Congrats, you've recovered the public funds and finished this lab!"
+        textView.textColor = UIColor.green
     }
     func fail() {
         textView.text = "Oops, you've recovered the wrong amount, remember to carefully pick the value"

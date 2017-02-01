@@ -17,12 +17,17 @@ class NiceWorkViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
-        let strToDisplay = textToDisplay[0]
-        if strToDisplay.characters.count == 0 {
-            textLabel.text = "Not Quite! Please Try again"
+        if textToDisplay.count > 0 {
+            let strToDisplay = textToDisplay[0]
+            if strToDisplay.characters.count == 0 {
+                textLabel.text = "Not Quite! Please Try again"
+            } else {
+                textLabel.text = "Nice work, Move on to the next stage!"
+            }
         } else {
-            textLabel.text = "Nice work, Move on to the next stage!"
+            textLabel.text = "Not Quite! Please Try again"
         }
+
     }
 
     override func didReceiveMemoryWarning() {

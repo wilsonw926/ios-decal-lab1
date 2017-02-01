@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gaa-Ll-21n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -231,15 +231,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHP-HW-309">
-                                <rect key="frame" x="39" y="71" width="297" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHP-HW-309">
+                                <rect key="frame" x="39" y="71" width="297" height="157"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.8078432083" green="0.35355706190000002" blue="0.3584613465" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="P8q-tG-aBM" firstAttribute="top" secondItem="lHP-HW-309" secondAttribute="bottom" constant="439" id="2bp-f3-JS9"/>
+                            <constraint firstItem="lHP-HW-309" firstAttribute="leading" secondItem="nlU-6o-KqO" secondAttribute="leadingMargin" constant="23" id="72R-E1-qCa"/>
+                            <constraint firstItem="lHP-HW-309" firstAttribute="top" secondItem="cfs-2t-75p" secondAttribute="bottom" constant="51" id="86e-Uk-yYG"/>
+                            <constraint firstItem="lHP-HW-309" firstAttribute="centerX" secondItem="nlU-6o-KqO" secondAttribute="centerX" id="MiV-b9-SzV"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="textView" destination="lHP-HW-309" id="VyF-KE-obN"/>
@@ -310,8 +315,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ki-Lh-DBk">
-                                <rect key="frame" x="41" y="281" width="293" height="105"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ki-Lh-DBk">
+                                <rect key="frame" x="27" y="248" width="321" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="321" id="FR4-GR-cfz"/>
+                                    <constraint firstAttribute="height" constant="170" id="mYn-0j-8Tp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -319,10 +328,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3Ki-Lh-DBk" firstAttribute="centerY" secondItem="oPs-4a-6Rc" secondAttribute="centerY" id="9Bf-Yy-ea6"/>
-                            <constraint firstItem="3Ki-Lh-DBk" firstAttribute="leading" secondItem="oPs-4a-6Rc" secondAttribute="leadingMargin" constant="25" id="QdN-uf-7pm"/>
-                            <constraint firstItem="3Ki-Lh-DBk" firstAttribute="top" secondItem="J5l-3V-1eB" secondAttribute="bottom" constant="261" id="SuP-3g-rX3"/>
-                            <constraint firstItem="3Ki-Lh-DBk" firstAttribute="centerX" secondItem="oPs-4a-6Rc" secondAttribute="centerX" id="fTG-dP-hLB"/>
+                            <constraint firstItem="3Ki-Lh-DBk" firstAttribute="centerX" secondItem="oPs-4a-6Rc" secondAttribute="centerX" id="GHo-i1-Ozr"/>
+                            <constraint firstItem="3Ki-Lh-DBk" firstAttribute="centerY" secondItem="oPs-4a-6Rc" secondAttribute="centerY" id="jtE-sM-XgC"/>
                         </constraints>
                     </view>
                     <connections>
