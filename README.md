@@ -28,7 +28,7 @@ Once you've donwloaded the files onto your computer, open up the file **XcodeTou
 Before starting, it may be helpful to open the file **Main.storyboard** to see the layout of the project. Each of the View Controllers (frames) in your storyboard corresponds to a ViewController file in the Project Navigator.
 
 ## Problem 1: Defining Variables ##
-If you open up **DefineVariableViewController.swift**, you'll notice that there are two "YOUR CODE HERE" sections. The goal of this assignment is to define a variable that can be used in both places to transfer data. 
+If you open up **DefineVariableViewController.swift**, you'll notice that there are two "YOUR CODE HERE" sections. The goal of this problem is have you define a variable that can be used to transfer data between view controllers. 
 
 In the `getTextToDisplay` method, there is a `formattedTextArray` variable. In the `prepareForSegue` method, there is a `textToDisplay` property of `destinationVC` being set to an empty array. Your goal is to make these two ends meet by making the `textToDisplay` property = `formattedTextArray`.
 
