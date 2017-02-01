@@ -20,7 +20,9 @@ class OptionalsViewController: UIViewController {
 
     @IBAction func testForOptional(_ sender: Any) {
         //Implement proper usage of optionals so to prevent app from crashing
-        textOutput.text = self.returnStringAtRandom()!
+        //YOUR CODE HERE
+        textOutput.text = self.returnStringAtRandom()! //CHANGE THIS LINE
+        
         self.successCount += 1
         if (self.successCount == 3) {
             textOutput.text = "Good job! You've completed this portion. Move on to the next"
