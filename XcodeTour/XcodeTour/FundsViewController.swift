@@ -24,7 +24,7 @@ class FundsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     func discoverFunds() {
-        let url = NSURL(string: "https://akbapu14.github.io/resume.txt")
+        let url = NSURL(string: fundsURL)
         let task = URLSession.shared.dataTask(with: url! as URL) {(data, response, error) in
             
             let amountLeft = String(data: data!, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))!
