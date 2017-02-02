@@ -33,7 +33,7 @@ class OptionalsViewController: UIViewController {
         textOutput.text = nonOptional
     }
     func returnStringAtRandom() -> String? {
-        let randomNumber  = GKRandomSource.sharedRandom().nextInt(upperBound: 2)
+        let randomNumber  = GKRandomSource.sharedRandom().nextInt(upperBound: 3)
         if randomNumber == 0 {
             return "Non-Null String Returned. You got lucky! Try again!"
         } else {
