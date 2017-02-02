@@ -12,6 +12,7 @@ class OptionalsViewController: UIViewController {
 
     @IBOutlet weak var textOutput: UILabel!
     var successCount = 0
+    var didBecomeNull = false
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,20 +20,25 @@ class OptionalsViewController: UIViewController {
     }
 
     @IBAction func testForOptional(_ sender: Any) {
-        //Implement proper usage of optionals so to prevent app from crashing
-        //YOUR CODE HERE
-        textOutput.text = self.returnStringAtRandom()! //CHANGE THIS LINE
+        
+        //TODO: Implement proper usage of optionals to prevent app from crashing
+        passInNonOptional(self.returnStringAtRandom()!)
         
         self.successCount += 1
-        if (self.successCount == 3) {
+        if (self.successCount == 3 && didBecomeNull) {
             textOutput.text = "Good job! You've completed this portion. Move on to the next"
         }
+    }
+    func passInNonOptional(_ nonOptional: String) {
+        textOutput.text = nonOptional
     }
     func returnStringAtRandom() -> String? {
         let randomNumber  = GKRandomSource.sharedRandom().nextInt(upperBound: 2)
         if randomNumber == 0 {
             return "Non-Null String Returned. You got lucky! Try again!"
         } else {
+            self.didBecomeNull = true
+            textOutput.text = "NULL String Returned. You handled it well! Good job!"
             return nil
         }
     }

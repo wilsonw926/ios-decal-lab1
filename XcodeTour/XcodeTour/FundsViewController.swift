@@ -28,10 +28,9 @@ class FundsViewController: UIViewController {
         let task = URLSession.shared.dataTask(with: url! as URL) {(data, response, error) in
             
             let amountLeft = String(data: data!, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))!
-            
-            //YOUR CODE HERE
-            //Search for and find a suitable constant. Remember, use "po" to type in swift code into the debugger.
-            //YOU MAY NOT USE INTEGER VALUES HERE, YOU MUST USE A PREDEFINED CONSTANT
+        
+            //TODO: Search for and find a suitable constant. Remember, use "po" to type in swift code into the debugger.
+            //YOU MAY NOT USE INTEGER VALUES HERE, THERE IS A PREDEFINED CONSTANT SOMEWHERE IN THE PROJECT THAT YOU HAVE TO FIND
             //amountLeft += 0
             
             if Int(amountLeft) == 1000000 {
